@@ -123,7 +123,7 @@ function addRemoveToFavList(id){
     }
     localStorage.setItem("favList",JSON.stringify(arr));
     myFavMeal();
-    showMeals();
+    // showMeals();
     
 }
 
@@ -131,8 +131,8 @@ async function myFavMeal(){
     let arr = JSON.parse(localStorage.getItem("favList"));
     let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
     let html = "";
-    // document.getElementById("fav-list").innerHTML = "Favourites"
-    // document.getElementById("search").style.display = "none"
+    document.getElementById("search").style.display = "none"
+    document.getElementById("fav-list").innerHTML = "Favourites"
     if(arr.length == 0){
         html += `
             <div class="page-wrap d-flex flex-row align-items-center">
@@ -148,6 +148,7 @@ async function myFavMeal(){
                 </div>
             </div>
         `
+
     }else{
         for (let i = 0; i < arr.length; i++) {
             await fetchMealApi(url,arr[i]).then(data=>{
