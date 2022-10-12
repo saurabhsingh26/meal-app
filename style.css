@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(26, 26, 27);
+    font-family: 'Nunito', sans-serif;
+
+}
+#fav-list{
+    /* display: none; */
+    color: white;
+}
+
+#header{
+    color: white;
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between ;
+    padding-top: 1rem;
+}
+#header div{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#search-container{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    
+}
+#search-container #search{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding: 1rem;
+    border-radius: 3rem;
+    outline: none;
+}
+
+
+#display{
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95vw;
+    min-height: 60vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+
+#card {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#card img {
+    border-radius: 50%;
+}
+
+
+/* meal details container */
+#meal-details{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:black ;
+    color: white;
+}
+#meal-header{
+    width: 70%;
+    margin: auto;
+}
+#meal-thumbail img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-style: italic; */
+}
+#meal-instruction{
+    margin: auto;
+    text-align: center;
+}
+.col-md-12{
+    color: white;
+}
+
+
+
+/* favourites offcanvus */
+#favourites-body{
+    background-color:#212529 ;
+}
