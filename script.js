@@ -116,13 +116,17 @@ function addRemoveToFavList(id){
         let indexOfFavList = arr.indexOf(id);
         arr.splice(indexOfFavList,1);
         alert("Your Meal removed from favouritelist")
+        localStorage.setItem("favList",JSON.stringify(arr));
+        myFavMeal()
     
     }else{
         arr.push(id);
         alert("Your meal added in your favourite list");
+        localStorage.setItem("favList",JSON.stringify(arr));
+        showMeals()
     }
     localStorage.setItem("favList",JSON.stringify(arr));
-    myFavMeal();
+    // myFavMeal();
     // showMeals();
     
 }
